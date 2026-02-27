@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct MainView: View {
     @State private var showingSettings = false
 
     var body: some View {
@@ -16,6 +16,7 @@ struct HomeView: View {
             HStack {
                 // settings button
                 Button {
+                    // boolean that makes the settings show up
                     showingSettings = true
                 } label: {
                     Image(systemName: "gearshape")
@@ -65,5 +66,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    MainView()
 }
