@@ -10,6 +10,12 @@
 import Foundation
 
 struct LastfmDataService {
+    private let lastfmAPIKey: String
+    
+    init(lastfmAPIKey: String = Secrets.lastfmAPIKey) {
+        // init api key on creation
+        self.lastfmAPIKey = lastfmAPIKey
+    }
     
     func getUsersArtistInfo(){
         
