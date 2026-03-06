@@ -29,6 +29,28 @@ struct TopArtistsAttributes: Decodable {
     let total: String
 }
 
+struct LibraryArtistsResponse: Decodable {
+    let artists: LibraryArtists
+}
+
+struct LibraryArtists: Decodable {
+    let artist: [Artist]
+    let attr: LibraryArtistsAttributes
+
+    private enum CodingKeys: String, CodingKey {
+        case artist
+        case attr = "@attr"
+    }
+}
+
+struct LibraryArtistsAttributes: Decodable {
+    let user: String
+    let totalPages: String
+    let page: String
+    let perPage: String
+    let total: String
+}
+
 struct Artist: Decodable {
     let name: String
     let playcount: String

@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6A8606F5-6E04-447B-B8BB-C20C9A1999C4"
+            uuid = "316632A8-FCEC-4AD6-B5E6-C720B46C235B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Necromancer.fm/Services/LastfmDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "getUsersArtistInfo()"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "getUsersLibraryArtistInfo()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
