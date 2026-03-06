@@ -9,12 +9,6 @@
 
 import Foundation
 
-enum NetworkError: Error {
-    case badURL
-    case requestFailed(Int)
-    case decodingFailed(Error)
-}
-
 struct LastfmDataService {
     private let lastfmAPIKey: String
     private let lastfmAPIurl: String = "https://ws.audioscrobbler.com/2.0/"
@@ -52,3 +46,4 @@ struct LastfmDataService {
         print(rawJson)
     }
 }
+
