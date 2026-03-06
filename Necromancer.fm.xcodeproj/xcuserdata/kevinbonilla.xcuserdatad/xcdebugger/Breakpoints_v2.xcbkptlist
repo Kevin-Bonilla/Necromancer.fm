@@ -3,4 +3,66 @@
    uuid = "8D7420C0-E2E5-43D9-BB3E-0ACD7D81A9E0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05B9FF49-9DA4-4031-B061-2BEC50C7612C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Necromancer.fm/Services/LastfmDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getUsersArtistInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05B9FF49-9DA4-4031-B061-2BEC50C7612C - f9dfc3b060f4277f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Necromancer_fm.LastfmDataService.getUsersArtistInfo() async throws -&gt; ()"
+                  moduleName = "Necromancer.fm.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinbonilla/Documents/GitHub/xcode/Necromancer.fm/Necromancer.fm/Services/LastfmDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "05B9FF49-9DA4-4031-B061-2BEC50C7612C - 3e1417094784de02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Necromancer_fm.LastfmDataService.getUsersArtistInfo() async throws -&gt; ()"
+                  moduleName = "Necromancer.fm.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinbonilla/Documents/GitHub/xcode/Necromancer.fm/Necromancer.fm/Services/LastfmDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "05B9FF49-9DA4-4031-B061-2BEC50C7612C - ae7141208133197a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Necromancer_fm.LastfmDataService.getUsersArtistInfo() async throws -&gt; ()"
+                  moduleName = "Necromancer.fm.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinbonilla/Documents/GitHub/xcode/Necromancer.fm/Necromancer.fm/Services/LastfmDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

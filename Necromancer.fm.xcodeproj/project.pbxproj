@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		A653DFB12F5B42A200B87AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A653DF812F510CC900B87AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A653DF882F510CC900B87AC3;
+			remoteInfo = Necromancer.fm;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A653DF892F510CC900B87AC3 /* Necromancer.fm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Necromancer.fm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A653DFAD2F5B42A200B87AC3 /* Necromancer.fmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Necromancer.fmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = Necromancer.fm;
 			sourceTree = "<group>";
 		};
+		A653DFAE2F5B42A200B87AC3 /* Necromancer.fmTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Necromancer.fmTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A653DF862F510CC900B87AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A653DFAA2F5B42A200B87AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A653DF8B2F510CC900B87AC3 /* Necromancer.fm */,
+				A653DFAE2F5B42A200B87AC3 /* Necromancer.fmTests */,
 				A653DF8A2F510CC900B87AC3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A653DF892F510CC900B87AC3 /* Necromancer.fm.app */,
+				A653DFAD2F5B42A200B87AC3 /* Necromancer.fmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = A653DF892F510CC900B87AC3 /* Necromancer.fm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A653DFAC2F5B42A200B87AC3 /* Necromancer.fmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A653DFB32F5B42A200B87AC3 /* Build configuration list for PBXNativeTarget "Necromancer.fmTests" */;
+			buildPhases = (
+				A653DFA92F5B42A200B87AC3 /* Sources */,
+				A653DFAA2F5B42A200B87AC3 /* Frameworks */,
+				A653DFAB2F5B42A200B87AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A653DFB22F5B42A200B87AC3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A653DFAE2F5B42A200B87AC3 /* Necromancer.fmTests */,
+			);
+			name = Necromancer.fmTests;
+			packageProductDependencies = (
+			);
+			productName = Necromancer.fmTests;
+			productReference = A653DFAD2F5B42A200B87AC3 /* Necromancer.fmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					A653DF882F510CC900B87AC3 = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					A653DFAC2F5B42A200B87AC3 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = A653DF882F510CC900B87AC3;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				A653DF882F510CC900B87AC3 /* Necromancer.fm */,
+				A653DFAC2F5B42A200B87AC3 /* Necromancer.fmTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A653DF872F510CC900B87AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A653DFAB2F5B42A200B87AC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A653DFA92F5B42A200B87AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A653DFB22F5B42A200B87AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A653DF882F510CC900B87AC3 /* Necromancer.fm */;
+			targetProxy = A653DFB12F5B42A200B87AC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A653DF922F510CCA00B87AC3 /* Debug */ = {
@@ -320,6 +395,48 @@
 			};
 			name = Release;
 		};
+		A653DFB42F5B42A200B87AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8UG3M5NZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KevinBonilla.Necromancer-fmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Necromancer.fm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Necromancer.fm";
+			};
+			name = Debug;
+		};
+		A653DFB52F5B42A200B87AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8UG3M5NZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KevinBonilla.Necromancer-fmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Necromancer.fm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Necromancer.fm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +454,15 @@
 			buildConfigurations = (
 				A653DF952F510CCA00B87AC3 /* Debug */,
 				A653DF962F510CCA00B87AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A653DFB32F5B42A200B87AC3 /* Build configuration list for PBXNativeTarget "Necromancer.fmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A653DFB42F5B42A200B87AC3 /* Debug */,
+				A653DFB52F5B42A200B87AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
