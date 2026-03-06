@@ -20,6 +20,7 @@ struct LastfmDataServiceTests {
         // For example:
         // let result = try await service.getUsersArtistInfo(user: "testUser")
         // #expect(!result.isEmpty)
+        let result = try await lastfmDataService.getUsersArtistInfo()
 
         // For now, just assert the service exists to satisfy the test scaffold.
         #expect(lastfmDataService != nil)

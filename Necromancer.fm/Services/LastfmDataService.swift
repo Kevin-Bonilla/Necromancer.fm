@@ -47,5 +47,8 @@ struct LastfmDataService {
         }
         // TODO: decode `data` into your expected model type
         
+        // TODO: delete this later was just using for testing purposes to see the json
+        let rawJson = String(data: data, encoding: .utf8)
+        print(rawJson)
     }
 }
