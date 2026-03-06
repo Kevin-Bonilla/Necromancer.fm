@@ -18,7 +18,7 @@ struct LastfmDataService {
         self.lastfmAPIKey = lastfmAPIKey
     }
     
-    func getUsersArtistInfo() async throws {
+    func getUsersArtistInfo() async throws -> [Artist] {
         // build url for our api request
         var urlComponents = URLComponents(string: lastfmAPIurl)!
         urlComponents.queryItems = [
@@ -27,7 +27,8 @@ struct LastfmDataService {
             URLQueryItem(name: "api_key", value: lastfmAPIKey),
             URLQueryItem(name: "format", value: "json")
         ]
-            
+        
+        // checks if valid url, if not throw error
         guard let url = urlComponents.url else {
             throw NetworkError.badURL
         }
@@ -39,11 +40,16 @@ struct LastfmDataService {
         if let http = response as? HTTPURLResponse, !(200...299).contains(http.statusCode) {
             throw NetworkError.requestFailed(http.statusCode)
         }
-        // TODO: decode `data` into your expected model type
         
-        // TODO: delete this later was just using for testing purposes to see the json
-        let rawJson = String(data: data, encoding: .utf8)
-        print(rawJson)
+        // TODO: decode `data` into your expected model type
+        // decoding data from our request, if not throw decoding error
+        do{
+            let topArtistsResponse = try JSONDecoder().decode(TopArtistsResponse.self, from: data)
+            let artists = topArtistsResponse.topartists.artist
+            return artists
+        } catch {
+            throw NetworkError.decodingFailed(error)
+        }
     }
 }
 
