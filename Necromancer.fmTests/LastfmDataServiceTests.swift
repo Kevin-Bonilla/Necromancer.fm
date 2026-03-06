@@ -15,15 +15,14 @@ struct LastfmDataServiceTests {
     func testGetUsersArtistInfo() async throws {
         // Initialize the service on the main actor. If the initializer requires an API key, provide a test key or empty string.
         let lastfmDataService = LastfmDataService()
-
-        // When you add the real call, ensure it is awaited and does not throw.
-        // For example:
-        // let result = try await service.getUsersArtistInfo(user: "testUser")
-        // #expect(!result.isEmpty)
+        
+        // calling getUsersArtistInfo and asserting our results
         let result = try await lastfmDataService.getUsersArtistInfo()
 
-        // For now, just assert the service exists to satisfy the test scaffold.
-        #expect(lastfmDataService != nil)
+        // Assert the static type is [Artist]
+        #expect(type(of: result) == [Artist].self)
+        // Assert we received at least one artist
+        #expect(!result.isEmpty)
     }
 
 }
