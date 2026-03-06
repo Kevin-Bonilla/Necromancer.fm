@@ -12,22 +12,24 @@ import Foundation
 struct LastfmDataService {
     private let lastfmAPIKey: String
     private let lastfmAPIurl: String = "https://ws.audioscrobbler.com/2.0/"
+    // TODO: unhardcode this later
+    private let lastfmUsername: String = "x762-"
     
     init(lastfmAPIKey: String = Secrets.lastfmAPIKey) {
         // init api key on creation
         self.lastfmAPIKey = lastfmAPIKey
+        
+        // TODO: add an init that gets user's lastfm username and stores it
     }
     
     func getUsersTopArtistInfo() async throws -> [Artist] {
         // build url for our api request
         var urlComponents = URLComponents(string: lastfmAPIurl)!
-        // TODO: unhardcode the username later
-        var username = "x762-"
         
         // updating queryItems with relevent info for API call
         urlComponents.queryItems = [
             URLQueryItem(name: "method", value: "user.gettopartists"),
-            URLQueryItem(name: "user", value: username),
+            URLQueryItem(name: "user", value: lastfmUsername),
             URLQueryItem(name: "period", value: "overall"),
             URLQueryItem(name: "api_key", value: lastfmAPIKey),
             URLQueryItem(name: "format", value: "json")
@@ -59,12 +61,10 @@ struct LastfmDataService {
     func getUsersLibraryArtistInfo() async throws -> [Artist] {
         // build url for our api request
         var urlComponents = URLComponents(string: lastfmAPIurl)!
-        // TODO: unhardcode the username later
-        var username = "x762-"
         
         urlComponents.queryItems = [
             URLQueryItem(name: "method", value: "library.getartists"),
-            URLQueryItem(name: "user", value: username),
+            URLQueryItem(name: "user", value: lastfmUsername),
             URLQueryItem(name: "api_key", value: lastfmAPIKey),
             URLQueryItem(name: "format", value: "json")
         ]
