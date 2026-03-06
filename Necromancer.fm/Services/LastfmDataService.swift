@@ -41,7 +41,6 @@ struct LastfmDataService {
             throw NetworkError.requestFailed(http.statusCode)
         }
         
-        // TODO: decode `data` into your expected model type
         // decoding data from our request, if not throw decoding error
         do{
             let topArtistsResponse = try JSONDecoder().decode(TopArtistsResponse.self, from: data)
