@@ -21,9 +21,13 @@ struct LastfmDataService {
     func getUsersArtistInfo() async throws -> [Artist] {
         // build url for our api request
         var urlComponents = URLComponents(string: lastfmAPIurl)!
+        // TODO: unhardcode the username later
+        var username = "x762-"
+        
+        // updating queryItems with relevent info for API call
         urlComponents.queryItems = [
             URLQueryItem(name: "method", value: "user.gettopartists"),
-            URLQueryItem(name: "user", value: "x762-"), // TODO: unhardcode this user later
+            URLQueryItem(name: "user", value: username), // TODO: unhardcode this user later
             URLQueryItem(name: "api_key", value: lastfmAPIKey),
             URLQueryItem(name: "format", value: "json")
         ]
